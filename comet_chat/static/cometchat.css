@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+#room {
+  height: 90%;
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+  overflow: auto;
+}
+#room ul {
+  position: absolute;
+  bottom: 0;
+}
+#control-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+#control-bar input#message {
+  background: white;
+  border: 1px solid #ebebeb;
+  padding: 4px;
+  font-size: 1.2em;
+  width: 100%;
+  outline: none;
+}

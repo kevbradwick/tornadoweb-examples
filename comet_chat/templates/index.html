@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Comet Chat | Tornado</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ static_url('cometchat.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('cometchat.css') }}" media="all" />
+</head>
+<body>
+
+<div id="room">
+    <ul id="messages">
+
+    </ul>
+</div>
+<div id="control-bar">
+    <form method="post" action="/">
+        <input type="text" id="message" value="" placeholder="Enter some text here..." />
+    </form>
+</div>
+</body>
+</html>
