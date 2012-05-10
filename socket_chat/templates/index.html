@@ -12,9 +12,9 @@
     <title>Comet Chat | Tornado</title>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ static_url('cometchat.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('socketchat.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css">
-    <link rel="stylesheet" type="text/css" href="{{ static_url('cometchat.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('socketchat.css') }}" media="all" />
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 </div>
 <div id="control-bar">
     <form method="post" action="/">
-        <input type="text" id="message" autocomplete="off" value="" placeholder="Enter some text here..." />
+        <input type="text" id="message" value="" autocomplete="off" placeholder="Enter some text here..." />
     </form>
 </div>
 </body>

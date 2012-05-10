@@ -7,8 +7,11 @@ import json
 
 
 class Messages(object):
+    """
+    This is a pretty straight forward messages class that will handle the
+    callbacks waiting to hear new messages
+    """
 
-    messages = []
     callbacks = []
 
     def add(self, message):
@@ -16,7 +19,6 @@ class Messages(object):
         For every message added, all the callbacks are fired. These callbacks
         are requests waiting to hear for changes
         """
-        self.messages.append(message)
         for cb in self.callbacks:
             cb(message)
         self.callbacks = [] # reset the callbacks
